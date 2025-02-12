@@ -21,8 +21,8 @@ class AdaptadorEvento(val eventos:List<Evento>,onclickElemento:(Int)->Unit):Recy
         {
             val e=eventos.get(posicion)
 
-            val miuri=Uri.parse("${ContentResolver.SCHEME_ANDROID_RESOURCE}://${itemView.context.packageName}/${e.imagen}");
-            binding_holderevento.imagenevento.setImageURI(miuri)
+          //  val miuri=Uri.parse("${ContentResolver.SCHEME_ANDROID_RESOURCE}://${itemView.context.packageName}/${e.imagen}");
+            binding_holderevento.imagenevento.setImageURI(Uri.parse(e.imagen))
             binding_holderevento.tituloeventotv.text=e.titulo
             binding_holderevento.fechaEventotv.text= SimpleDateFormat("dd/MM/yyyy").format(Date(e.fecha*1000)).toString()
             if(usuario!=null)
