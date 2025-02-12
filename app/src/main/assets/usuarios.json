@@ -1,0 +1,7 @@
+[{"login":"vicmar","pass":"123","nombre":"Martin Lozano,Victor Miguel","foto":"android.resource://com.example.eventdroid/drawable/victormartinez","esadmin":0,"eventos_suscritos":[0]},
+{"login":"alvmoy","pass":"123","nombre":"Moyano Clemente, Álvaro","foto":"android.resource://com.example.eventdroid/drawable/alvaromoyano","esadmin":1,"eventos_suscritos":[]},
+{"login":"laualv","pass":"123","nombre":"Álvarez Villegas, Laura","foto":"android.resource://com.example.eventdroid/drawable/lauraalvarez","esadmin":0,"eventos_suscritos":[1,3]},
+{"login":"fercall","pass":"123","nombre":"Calleja Zurro, Fernando","foto":"android.resource://com.example.eventdroid/drawable/fernandocalleja","esadmin":1,"eventos_suscritos":[]},
+{"login":"davdie","pass":"123","nombre":"Diez Placer, David","foto":"android.resource://com.example.eventdroid/drawable/daviddiez","esadmin":0,"eventos_suscritos":[]},
+{"login":"bryfig","pass":"123","nombre":"Figueroa Díaz, Bryan Alex","foto":"android.resource://com.example.eventdroid/drawable/bryanalexyfigueroa","esadmin":1,"eventos_suscritos":[0,1,2]},
+{"login":"diefga","pass":"123","nombre":"FGarcía Mínguez, Diego","foto":"android.resource://com.example.eventdroid/drawable/diegogarcia","esadmin":0,"eventos_suscritos":[]}]

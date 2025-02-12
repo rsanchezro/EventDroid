@@ -1,0 +1,27 @@
+[
+  {
+    "texto": "Muy buen evento, lo disfruté mucho.",
+    "valoracion": 5,
+    "usuario": "vicmar"
+  },
+  {
+    "texto": "Estuvo interesante, aunque pudo ser mejor.",
+    "valoracion": 3,
+    "usuario": "laualv"
+  },
+  {
+    "texto": "No me gustó mucho la organización del evento.",
+    "valoracion": 2,
+    "usuario": "fercall"
+  },
+  {
+    "texto": "Excelente experiencia, volvería a asistir.",
+    "valoracion": 5,
+    "usuario": "bryfig"
+  },
+  {
+    "texto": "El evento fue aceptable, pero esperaba más.",
+    "valoracion": 3,
+    "usuario": "diefga"
+  }
+]
