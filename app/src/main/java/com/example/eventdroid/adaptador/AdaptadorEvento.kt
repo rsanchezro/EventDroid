@@ -13,7 +13,7 @@ import com.example.eventdroid.databinding.ElementoeventoBinding
 import java.text.SimpleDateFormat
 import java.util.Date
 
-class AdaptadorEvento(val eventos:List<Evento>):RecyclerView.Adapter<AdaptadorEvento.HolderEvento>() {
+class AdaptadorEvento(val eventos:List<Evento>,onclickElemento:(Int)->Unit):RecyclerView.Adapter<AdaptadorEvento.HolderEvento>() {
         private var usuario:Usuario?=null
     inner class HolderEvento(val vista: View):RecyclerView.ViewHolder(vista) {
             val binding_holderevento=ElementoeventoBinding.bind(vista)

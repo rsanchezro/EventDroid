@@ -89,8 +89,15 @@ class MainActivity : AppCompatActivity() {
 
         mirecycler.layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
 
-        miadaptador=AdaptadorEvento(ProveedorEvento.eventos)
+        miadaptador=AdaptadorEvento(ProveedorEvento.eventos,{posicion->abrir_opiniones()})
         mirecycler.adapter=miadaptador
+    }
+
+    private fun abrir_opiniones() {
+        if(usuario!=null) {
+            var miIntent = Intent(this, OpinionActivity::class.java)
+            startActivity(miIntent)
+        }
     }
 
     private fun inicializarToolbar() {
