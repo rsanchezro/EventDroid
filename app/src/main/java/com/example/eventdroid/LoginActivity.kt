@@ -26,22 +26,7 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
-        mibinding.iniciarsesionBoton.setOnClickListener {
-            usuario= ProveedorUsuario.usuarios.find { (it.login.equals(mibinding.usuarioEdittext.text.toString()))&&(it.pass.equals(mibinding.passwordEdittext.text.toString())) }
-            if(usuario!=null) {
-                var miIntent = Intent()
-                miIntent.putExtra("Usuario", usuario!!.login)
-                setResult(0,miIntent)
-                finish()
-            }
-            else{
-                Toast.makeText(this,"USUARIO NO EXISTE",Toast.LENGTH_LONG).show()
 
-            }
-
-
-
-        }
     }
 
 

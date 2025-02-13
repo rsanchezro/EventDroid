@@ -13,35 +13,11 @@ import com.example.eventdroid.databinding.ElementoeventoBinding
 import java.text.SimpleDateFormat
 import java.util.Date
 
-class AdaptadorEvento(val eventos:List<Evento>,onclickElemento:(Int)->Unit):RecyclerView.Adapter<AdaptadorEvento.HolderEvento>() {
+class AdaptadorEvento(val eventos:List<Evento>):RecyclerView.Adapter<AdaptadorEvento.HolderEvento>() {
         private var usuario:Usuario?=null
     inner class HolderEvento(val vista: View):RecyclerView.ViewHolder(vista) {
             val binding_holderevento=ElementoeventoBinding.bind(vista)
-        fun render(posicion:Int)
-        {
-            val e=eventos.get(posicion)
 
-          //  val miuri=Uri.parse("${ContentResolver.SCHEME_ANDROID_RESOURCE}://${itemView.context.packageName}/${e.imagen}");
-            binding_holderevento.imagenevento.setImageURI(Uri.parse(e.imagen))
-            binding_holderevento.tituloeventotv.text=e.titulo
-            binding_holderevento.fechaEventotv.text= SimpleDateFormat("dd/MM/yyyy").format(Date(e.fecha*1000)).toString()
-            if(usuario!=null)
-            {
-                //Hay que visibilizar el elemento suscrito
-                binding_holderevento.suscribirseswitch.visibility=View.VISIBLE
-                usuario!!.eventos_suscritos.let {
-                    binding_holderevento.suscribirseswitch.isChecked=it.find { it==posicion }!=null
-                }
-
-
-            }
-            else
-            {
-                binding_holderevento.suscribirseswitch.visibility=View.INVISIBLE
-
-            }
-
-        }
 
     }
 
@@ -59,7 +35,7 @@ class AdaptadorEvento(val eventos:List<Evento>,onclickElemento:(Int)->Unit):Recy
     override fun getItemCount(): Int=eventos.size
 
     override fun onBindViewHolder(holder: HolderEvento, position: Int) {
-       holder.render(position)
+
 
     }
 }
